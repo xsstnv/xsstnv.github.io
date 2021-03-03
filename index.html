@@ -1,129 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>xsstnv</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
-    <style>
-        /* Header */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Nothing You Could Do', sans-serif;
-        }
-
-        .top {
-            position: fixed;
-            width: 100%;
-            z-index: 1;
-            top: 0;
-        }
-
-        .bar {
-            font-size: large;
-            letter-spacing: 4px;
-            overflow: hidden
-        }
-
-        .bar .bar-item {
-            padding: 8px 16px;
-            float: left;
-            width: auto;
-            border: none;
-            display: block;
-            outline: 0
-        }
-
-        .bar .btn {
-            white-space: normal
-        }
-
-        .btn {
-            border: none;
-            display: inline-block;
-            padding: 8px 16px;
-            vertical-align: middle;
-            overflow: hidden;
-            text-decoration: none;
-            color: inherit;
-            background-color: inherit;
-            text-align: center;
-            cursor: pointer;
-            white-space: nowrap
-        }
-
-        .btn {
-            -webkit-touch-callout: none;
-            -webkit-user-select: none;
-            -khtml-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none
-        }
-
-        .btn:disabled {
-            cursor: not-allowed;
-            opacity: 0.3
-        }
-
-        .card {
-            box-shadow: 0 2px 5px 0 rgba(80, 110, 135, 0.16), 0 2px 10px 0 rgba(80, 110, 135, 0.12)
-        }
-
-        .white {
-            color: #000 !important;
-            background-color: #fff !important
-        }
-
-        .padding {
-            padding: 8px 16px !important
-        }
-
-        .right {
-            font-size: medium;
-            float: right;
-        }
-
-        .glow:hover {
-            text-shadow: 2px 2px 4px rgba(80, 110, 135, 0.5);
-            text-decoration: underline;
-        }
-
-        @media only screen and (max-width: 600px) {
-            .bar {
-                text-align: center;
-            }
-
-            .right {
-                float: none;
-                text-align: center;
-            }
-
-            .bar .bar-item {
-                float: none;
-                display: inline-block;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css" type="text/css">
 </head>
-
 <body>
-    <div class="top">
-        <div class="bar white padding card">
-            <a href="#home" class="bar-item btn">
-                &quot;&gt;&lt;<span class="glow" onclick="javascript:alert(document.domain);">sstnv</span>&gt;
-            </a>
-            <div class="right">
-                <a href="https://blog.xsstnv.com" target="_blank" rel="noopener noreferer"
-                    class="bar-item btn glow">blog</a>
-                <a href="#projects" class="bar-item btn glow">projects</a>
-                <a href="#rss" class="bar-item btn glow">rss</a>
-            </div>
-        </div>
+    <div class="hed">
+        <img src="./image.png" class="hedimg"><span class="hedtitle">Martin Stoynov</span>
+    </div>
+    <div class="info">
+        <table cellspacing="0" cellpadding="0">
+            <tbody>
+                <tr>
+                    <td>E-Mail</td>
+                    <td class="data">xsstnv@protonmail.com</td>
+                </tr>
+                <tr>
+                    <td>Twitter</td>
+                    <td class="data"><a href="https://twitter.com/xsstnv">@xsstnv</a></td>
+                </tr>
+                <tr>
+                    <td>GitHub</td>
+                    <td class="data"><a href="https://github.com/xsstnv">@xsstnv</a></td>
+                </tr>
+                <tr>
+                    <td>Linkedin</td>
+                    <td class="data"><a href="https://bg.linkedin.com/in/xsstnv">/in/xsstnv</a></td>
+                </tr>
+                <tr>
+                    <td>Onion Address</td>
+                    <td class="data">aqew6fuciqxwdepwdpidzbtuihivwso2a76ssk5igrmsahw5bmtnivqd.onion</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </body>
 </html>

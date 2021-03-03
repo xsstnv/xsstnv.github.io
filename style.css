@@ -1,0 +1,49 @@
+@font-face {
+	font-family: "pusab";
+	src: url('pusab.ttf');
+}
+
+body {
+    color: #fff;
+    background: #222;
+    font-family: pusab;
+    font-size: 16px;
+    text-shadow: 2px 2px #555;
+    padding: 50px;
+}
+
+table {
+    border: none;
+}
+
+a {
+    color: #009650;
+    text-shadow: 2px 2px #5a0c0b;
+    text-decoration: none;
+}
+
+td {
+    padding: 0 2em 0.5em 0;
+}
+
+td.data {
+    text-transform: uppercase;
+    letter-spacing: 0.0625em;
+}
+
+.hed {
+    margin-bottom: 1em;
+}
+
+.hed img.hedimg {
+    height: 150px;
+    width: 150px;
+    margin: 0 80px 40px 0;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+
+.hed span.hedtitle {
+    font-size: 1.8em;
+}
