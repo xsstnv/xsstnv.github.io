@@ -29,6 +29,7 @@ td {
 td.data {
     text-transform: uppercase;
     letter-spacing: 0.0625em;
+    word-break: break-word;
 }
 
 .hed {
