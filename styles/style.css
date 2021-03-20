@@ -1,6 +1,6 @@
 @font-face {
 	font-family: "pusab";
-	src: url('/fonts/pusab.ttf');
+	src: url('/fonts/8-bit-hud.ttf');
 }
 
 body {
@@ -37,6 +37,7 @@ td.data {
 }
 
 .head img {
+    display: none;
     height: 150px;
     width: 150px;
     margin: 0 80px 40px 0;
@@ -44,6 +45,6 @@ td.data {
     vertical-align: middle;
 }
 
-.hed span {
+.head marquee {
     font-size: 1.8em;
 }
