@@ -17,8 +17,8 @@ table {
 }
 
 a {
-    color: #009650;
-    text-shadow: 2px 2px #5a0c0b;
+    color: #007896;
+    text-shadow: 2px 2px #003d4d;
     text-decoration: none;
 }
 
@@ -32,11 +32,11 @@ td.data {
     word-break: break-word;
 }
 
-.hed {
+.head {
     margin-bottom: 1em;
 }
 
-.hed img.hedimg {
+.head img {
     height: 150px;
     width: 150px;
     margin: 0 80px 40px 0;
@@ -44,7 +44,6 @@ td.data {
     vertical-align: middle;
 }
 
-
-.hed span.hedtitle {
+.hed span {
     font-size: 1.8em;
 }
