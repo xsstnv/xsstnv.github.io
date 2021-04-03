@@ -1,6 +1,6 @@
 {
   "name": "stnv",
-  "homepage": "https://xsstnv.github.io/stnv/",
+  "homepage": "https://xsstnv.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,7 +9,7 @@
     "@testing-library/user-event": "^7.2.1",
     "react": "^16.13.1",
     "react-copy-to-clipboard": "^5.0.2",
-    "react-dark-mode-toggle": "^0.2.0",
+    "react-device-detect": "^1.17.0",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
