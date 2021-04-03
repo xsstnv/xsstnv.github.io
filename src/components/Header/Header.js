@@ -1,30 +1,18 @@
 import React from 'react';
-import Typewriter from 'typewriter-effect';
-import { withRouter } from 'react-router-dom';
-import classes from './Header.module.css';
 import { isBrowser, isMobile } from "react-device-detect";
+import { withRouter } from 'react-router-dom';
+
+import classes from './Header.module.css';
 import BrowserMenu from '../BrowserMenu/BrowserMenu';
 import MobileMenu from '../MobileMenu/MobileMenu';
+import Logo from '../Logo/Logo';
 
-const Header = props => {
-
-    const onLogoClick = () => props.history.push("/");
-
-    const onInit = typewriter => {
-        typewriter
-            .typeString('> $ cd /root/')
-            .pauseFor(500)
-            .deleteChars(5)
-            .typeString('home/')
-            .start();
-    };
+const Header = () => {
 
     return (
         <div className={classes.Header}>
             <div className={classes.Inner}>
-                <div className={classes.Logo} onClick={onLogoClick}>
-                    <Typewriter onInit={onInit} />
-                </div>
+                <Logo />
                 <span className={classes.Right}>
                     {isBrowser && <BrowserMenu />}
                     {isMobile && <MobileMenu />}
