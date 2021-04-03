@@ -1,0 +1,19 @@
+.Menu {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    border: none;
+    margin: 0;
+    padding: 10px;
+}
+
+.Inner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+}
+
+.ListItem {
+    margin: 0;
+    padding: 5px;
+}

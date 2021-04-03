@@ -1,0 +1,20 @@
+.Menu {
+    background: #fafafa;
+    z-index: 9999;
+}
+
+.Inner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    font-size: 1rem;
+    list-style: none;
+}
+
+.ListItem {
+    margin: 0 12px;
+    cursor: pointer;
+}

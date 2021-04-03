@@ -1,0 +1,34 @@
+.Header {
+    background: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+}
+
+.Inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 760px;
+    max-width: 100%;
+}
+
+.Logo {
+    font-size: 1.125rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 700;
+    font-display: auto;
+    font-family: monospace, monospace;
+    cursor: pointer;
+}
+
+.Right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

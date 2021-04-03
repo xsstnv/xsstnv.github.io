@@ -16,69 +16,6 @@ body {
   flex-direction: column;
 }
 
-.container {
-  flex: 1 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-.logo {
-  font-size: 1.125rem;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  font-weight: 700;
-  font-display: auto;
-  font-family: monospace, monospace;
-  cursor: pointer;
-}
-
-.header {
-  background: #fafafa;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  padding: 20px;
-}
-
-.header-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 auto;
-  width: 760px;
-  max-width: 100%;
-}
-
-.header-right {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.menu {
-  background: #fafafa;
-  z-index: 9999;
-}
-
-.menu-inner {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0 15px;
-  font-size: 1rem;
-  list-style: none;
-}
-
-.menu-inner li {
-  margin: 0 12px;
-  cursor: pointer;
-}
 
 .menu a:last-of-type {
   margin-right: 0;
@@ -88,79 +25,6 @@ body {
   display: inline-block;
   margin-right: 15px;
   text-decoration: none;
-}
-
-.theme-toggle {
-  margin-left: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 1;
-  cursor: pointer;
-}
-
-.menu-trigger {
-  width: 24px;
-  height: 24px;
-  fill: currentColor;
-  margin-left: 10px;
-  cursor: pointer;
-}
-
-@media (max-width: 684px) {
-  .menu {
-    position: absolute;
-    top: 50px;
-    right: 0;
-    border: none;
-    margin: 0;
-    padding: 10px;
-  }
-  .menu-inner {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0;
-  }
-  .menu-inner li {
-    margin: 0;
-    padding: 5px;
-  }
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  flex: 1 auto;
-  align-items: center;
-  justify-content: center;
-  margin: 50px 0;
-}
-
-main {
-  display: block;
-}
-
-.footer {
-  padding: 40px 20px;
-  flex-grow: 0;
-  color: #999;
-}
-
-.footer-inner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  width: 760px;
-  max-width: 100%;
-}
-
-.footer-content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  font-size: 1rem;
-  color: #999;
 }
 
 a:link {
@@ -177,4 +41,4 @@ a:hover {
 
 a:active {
   color: hotpink;
-} 
+}

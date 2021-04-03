@@ -1,0 +1,22 @@
+.Footer {
+  padding: 40px 20px;
+  flex-grow: 0;
+  color: #999;
+}
+
+.Inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 760px;
+    max-width: 100%;  
+}
+
+.Content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1rem;
+  color: #999;
+}
