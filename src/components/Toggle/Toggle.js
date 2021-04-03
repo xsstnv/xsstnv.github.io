@@ -1,7 +1,9 @@
 import React from 'react';
 
+import classes from './Toggle.module.css';
+
 const Toggle = () => (
-    <span class="theme-toggle">
+    <span className={classes.Toggle}>
         <svg width="24" height="24" viewBox="0 0 48 48" fill="#333" xmlns="http://www.w3.org/2000/svg">
             <path d={`
                             M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22

@@ -7,9 +7,9 @@ import Footer from './components/Footer/Footer';
 
 const App = () => (
   <Router>
-    <Header/>
-    <Content/>
-    <Footer/>
+    <Header />
+    <Content />
+    <Footer />
   </Router>
 );
 

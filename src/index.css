@@ -16,6 +16,13 @@ body {
   flex-direction: column;
 }
 
+.container {
+  flex: 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
 
 .menu a:last-of-type {
   margin-right: 0;

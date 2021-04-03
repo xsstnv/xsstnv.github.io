@@ -7,6 +7,7 @@ class Homepage extends React.Component {
         return (
             <div>
                 <h1>Martin Stoynov</h1>
+                <p>Web Developer, Bug Bounty Hunter, CTF Player</p>
             </div>
         )
     }

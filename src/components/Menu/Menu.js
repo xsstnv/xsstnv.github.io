@@ -6,8 +6,8 @@ import MenuItems from '../../constants/MenuItems';
 const Menu = ({ classes, history }) => (
     <nav className={classes.Menu}>
         <ul className={classes.Inner}>
-            {MenuItems.map(menuItem => (
-                <li className={classes.ListItem} onClick={() => history.push(menuItem.uri)}>{menuItem.label}</li>
+            {MenuItems.map((menuItem,key) => (
+                <li className={classes.ListItem} onClick={() => history.push(menuItem.uri)} key={key}>{menuItem.label}</li>
             ))}
         </ul>
     </nav>
