@@ -1,0 +1,12 @@
+.Block {
+    padding: 25px;
+    width: 100%;
+    height: auto;
+    overflow: scroll;
+    background-color: #333;
+    color: lightsteelblue;
+}
+
+.Code {
+    cursor: pointer;
+}
