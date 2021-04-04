@@ -1,21 +1,48 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-// import { resources } from './demo/urls.config.js';
-// import Content from './pages/Content/Content';
-import Homepage from './pages/Homepage';
-import StatusPage from './pages/StatusPage';
-import { Result } from 'antd';
+import { connect } from 'react-redux';
+
+import { getMapping } from './redux/actions/mapping';
+import Markdown from './pages/Markdown';
+import Result from './components/Result/Result';
+
+
+const MappedRoutes = props => {
+
+    React.useEffect(() => {
+
+        props.getMapping();
+
+        // eslint-disable-next-line
+    }, []);
+
+    return (
+        <React.Fragment>
+            { props.mapping && props.mapping.mapping && props.mapping.mapping.length && props.mapping.mapping.map((item, key) => (
+                <Route key={key} exact path={item.url}>
+                    <Markdown path={process.env.REACT_APP_PAGES + item.path} />
+                </Route>
+            ))
+            }
+
+        </React.Fragment>
+    )
+}
+
+
+const mapStateToProps = state => ({
+    mapping: state.mapping,
+});
+
+const mapDispatchToProps = dispatch => ({
+    getMapping: () => dispatch(getMapping()),
+});
+
+const ConnectedMappedRoutes = connect(mapStateToProps, mapDispatchToProps)(MappedRoutes);
 
 export const routes = (
     <Switch>
-        {/* {
-            resources && resources.length && resources.map((resource,key) => (
-                <Route key={key} exact path={resource.url}>
-                    <Content path={resource.path}/>
-                </Route>
-            ))
-        } */}
-        <Route exact path="/" component={Homepage} />
-        <Route exact path="/:any" component={StatusPage} render={() => <Result status="404" />} />
+        <ConnectedMappedRoutes />
+        <Route exact path="/:any" render={() => <Result status="404" />} />
     </Switch>
 );

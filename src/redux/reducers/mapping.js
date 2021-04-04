@@ -1,17 +1,17 @@
-import { GET_THEME } from '../actions/types';
+import { GET_MAPPING } from '../actions/types';
 
 const initialState = {
-    theme: localStorage.getItem('theme'),
+    mapping: null,
 };
 
 export default function (state = initialState, action) {
-       
+
     switch (action.type) {
 
-        case GET_THEME:
+        case GET_MAPPING:
             return {
                 ...state,
-                theme: action.payload
+                mapping: action.payload
             };
 
         default:

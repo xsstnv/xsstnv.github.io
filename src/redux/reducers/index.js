@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import theme from './theme';
+import mapping from './mapping';
 
 export default combineReducers({
-  theme,
+  mapping,
 });
