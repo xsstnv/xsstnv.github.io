@@ -3,16 +3,14 @@ import { Route, Switch } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import { getMapping } from './redux/actions/mapping';
-import Markdown from './pages/Markdown';
+import MarkdownReader from './components/MarkdownReader/MarkdownReader';
 import Result from './components/Result/Result';
 
 
 const MappedRoutes = props => {
 
     React.useEffect(() => {
-
         props.getMapping();
-
         // eslint-disable-next-line
     }, []);
 
@@ -20,7 +18,7 @@ const MappedRoutes = props => {
         <React.Fragment>
             { props.mapping && props.mapping.mapping && props.mapping.mapping.length && props.mapping.mapping.map((item, key) => (
                 <Route key={key} exact path={item.url}>
-                    <Markdown path={process.env.REACT_APP_PAGES + item.path} />
+                    <MarkdownReader path={process.env.REACT_APP_PAGES + item.path} />
                 </Route>
             ))
             }

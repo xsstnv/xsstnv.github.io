@@ -2,5 +2,9 @@
     {
         "url": "/",
         "path": "/index.md"
+    },
+    {
+        "url": "/:any",
+        "path": "/404.md"
     }
 ]
