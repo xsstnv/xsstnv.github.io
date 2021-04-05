@@ -15,7 +15,7 @@ const MobileMenu = () => {
     return (
         <React.Fragment>
             {visible && <Menu classes={classes} />}
-            <Toggle />
+            {/* <Toggle /> */}
             <Trigger click={click} />
         </React.Fragment>
     );

@@ -8,7 +8,7 @@ import Menu from '../Menu/Menu';
 const BrowserMenu = () => (
     <React.Fragment>
         <Menu classes={classes} />
-        <Toggle />
+        {/* <Toggle /> */}
     </React.Fragment>
 );
 
