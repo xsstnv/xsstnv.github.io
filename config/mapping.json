@@ -1,10 +1,10 @@
 [
     {
         "url": "/",
-        "path": "/index.md"
+        "path": "index.md"
     },
     {
         "url": "/:any",
-        "path": "/404.md"
+        "path": "404.md"
     }
 ]
