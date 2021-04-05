@@ -1,12 +1,12 @@
 import React from 'react';
 
 import classes from './Content.module.css';
-import Routes from '../Routes/Routes';
+import Router from '../Router/Router';
 
 const Pages = () => (
     <div className={classes.Content}>
         <main className={classes.Main}>
-            <Routes />
+            <Router />
         </main>
     </div>
 );

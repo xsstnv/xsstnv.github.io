@@ -1,17 +1,17 @@
-import { GET_MAPPING } from '../actions/types';
+import { GET_ROUTING } from '../actions/types';
 
 const initialState = {
-    mapping: null,
+    routing: null,
 };
 
 export default function (state = initialState, action) {
 
     switch (action.type) {
 
-        case GET_MAPPING:
+        case GET_ROUTING:
             return {
                 ...state,
-                mapping: action.payload
+                routing: action.payload
             };
 
         default:

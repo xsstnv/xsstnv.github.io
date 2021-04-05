@@ -1,16 +1,16 @@
-import { GET_MAPPING } from './types';
+import { GET_NAVIGATION } from './types';
 import client from '../../client';
 import { config } from '../../config';
 
-const mapping = 'mapping.json';
+const navigation = 'navigation.json';
 
-export const getMapping = () => dispatch => {
+export const getNavigation = () => dispatch => {
     client
-        .get(config[process.env.REACT_APP_ENV].configPath + mapping)
+        .get(config[process.env.REACT_APP_ENV].configPath + navigation)
         .then(response => {
             if (response.data) {
                 dispatch({
-                    type: GET_MAPPING,
+                    type: GET_NAVIGATION,
                     payload: response.data
                 });
             }

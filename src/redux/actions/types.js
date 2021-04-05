@@ -1,1 +1,2 @@
-export const GET_MAPPING = "GET_MAPPING";
+export const GET_ROUTING = "GET_ROUTING";
+export const GET_NAVIGATION = "GET_NAVIGATION";

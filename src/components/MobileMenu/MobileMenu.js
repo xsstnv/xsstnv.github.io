@@ -1,7 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router';
 
-import Toggle from '../Toggle/Toggle';
 import classes from './MobileMenu.module.css';
 import Trigger from '../Trigger/Trigger';
 import Menu from '../Menu/Menu';
@@ -15,7 +14,6 @@ const MobileMenu = () => {
     return (
         <React.Fragment>
             {visible && <Menu classes={classes} />}
-            {/* <Toggle /> */}
             <Trigger click={click} />
         </React.Fragment>
     );
