@@ -1,0 +1,14 @@
+[
+    {
+        "label": "About",
+        "uri": "about"
+    },
+    {
+        "label": "Posts",
+        "uri": "posts"
+    },
+    {
+        "label": "Project",
+        "uri": "project"
+    }
+]
