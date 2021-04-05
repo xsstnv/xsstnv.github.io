@@ -21,7 +21,7 @@ class MarkdownReader extends React.Component {
         this._isMounted = true;
 
         if(this.props.path) {
-            fetch(this.props.path).then((response) => response.text()).then(text => {
+            fetch(process.env.REACT_APP_ENV + this.props.path).then((response) => response.text()).then(text => {
                 if (this._isMounted) {
                     this.setState({ data: text });
                 }
