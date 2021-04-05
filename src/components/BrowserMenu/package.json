@@ -1,5 +1,6 @@
 {
-    "name": "./BrowserMenu.js",
+    "name": "browser-menu",
     "version": "0.0.0",
-    "private": true
+    "private": true,
+    "main": "BrowserMenu.js"
 }

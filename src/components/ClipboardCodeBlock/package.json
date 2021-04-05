@@ -1,0 +1,6 @@
+{
+    "name": "clipboard-code-block",
+    "version": "0.0.0",
+    "private": true,
+    "main": "ClipboardCodeBlock.js"
+}
