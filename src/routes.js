@@ -17,7 +17,7 @@ const MappedRoutes = props => {
     return (
         <React.Fragment>
             { props.mapping && props.mapping.mapping && props.mapping.mapping.length && props.mapping.mapping.map((item, key) => (
-                <Route key={key} exact path={item.url}>
+                <Route key={key} exact={item.url === '/'} path={item.url}>
                     <MarkdownReader path={process.env.REACT_APP_PAGES + item.path} />
                 </Route>
             ))
