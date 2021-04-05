@@ -1,4 +1,7 @@
-## Technologies used
+## About
+- A simple react app that converts my markdown files into web pages.
+
+## Technologies
 
 - React
 - React Redux
